@@ -93,17 +93,11 @@ Here:
 ### Example:
 1. For two points $( x = (1, 2, 3) )$ and $( y = (4, 6, 8) )$:
      - If $( p = 1 )$ (Manhattan distance):
-         $$
-         d(x, y) = |1 - 4| + |2 - 6| + |3 - 8| = 3 + 4 + 5 = 12
-         $$
-     - If $( p = 2 \) (Euclidean distance):
-         $$
-         d(x, y) = \sqrt{(1 - 4)^2 + (2 - 6)^2 + (3 - 8)^2} = \sqrt{9 + 16 + 25} = \sqrt{50} \approx 7.07
-         $$
-     - If $( p = \infty \) (Chebyshev distance):
-         $$
-         d(x, y) = \max(|1 - 4|, |2 - 6|, |3 - 8|) = \max(3, 4, 5) = 5
-         $$
+         $d(x, y) = |1 - 4| + |2 - 6| + |3 - 8| = 3 + 4 + 5 = 12$
+     - If $( p = 2 )$ (Euclidean distance):
+         $d(x, y) = \sqrt{(1 - 4)^2 + (2 - 6)^2 + (3 - 8)^2} = \sqrt{9 + 16 + 25} = \sqrt{50} \approx 7.07$
+     - If $( p = \infty )$ (Chebyshev distance):
+         $d(x, y) = \max(|1 - 4|, |2 - 6|, |3 - 8|) = \max(3, 4, 5) = 5$
 
 2. In k-NN, the choice of $( p )$ in Minkowski distance can influence how neighbors are selected, impacting the algorithm's performance.
 
